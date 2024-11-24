@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webpage</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+<div class="search-page">
+
+    <div class="cancel-search">
+        <img src="img/close_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+    </div>
+
+    <div class="filter-box">
+
+        <div class="line-1">
+            <input id="input-search" type="text" placeholder="جستجو کنید...">
+        </div>
+
+        <div class="line-2">
+
+            <div class="filter-by-name">
+                <span class="filter-title">سخنرانان</span>
+                <span class="filter-svg">
+                    <img src="img/stat_minus_1_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                </span>
+                <div class="filter-dropdown">
+                    <span class="filter-value" date-value="استاد حاج حسن علم الهدی">استاد حاج حسن علم الهدی</span>
+                    <span class="filter-value" date-value="مرحوم استاد فلسفی">مرحوم استاد فلسفی</span>
+                    <span class="filter-value" date-value="مرحوم استاد باقر علم الهدی">مرحوم استاد باقر علم الهدی</span>
+                    <span class="filter-value" date-value="استاد امیر زرین">استاد امیر زرین</span>
+                    <span class="filter-value" date-value="استاد هادی علم الهدی">استاد هادی علم الهدی</span>
+                    <span class="filter-value" date-value="استاد آقاسی زاده">استاد آقاسی زاده</span>
+                    <span class="filter-value" date-value="مرحوم شیخ احمد کافی">مرحوم شیخ احمد کافی</span>
+                    <span class="filter-value" date-value="استاد بندانی نیشابوری">استاد بندانی نیشابوری</span>
+                    <span class="filter-value" date-value="استاد حسن قاسمی">استاد حسن قاسمی</span>
+                </div>
+            </div>
+
+            <div class="filter-by-subject">
+                <span class="filter-title">موضوعات</span>
+                <span class="filter-svg">
+                    <img src="img/stat_minus_1_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                </span>
+                <div class="filter-dropdown">
+                    <span class="filter-value" data-value="اخلاقی">اخلاقی</span>
+                    <span class="filter-value" data-value="اعتقادی">اعتقادی</span>
+                    <span class="filter-value" data-value="حقوق زوجین">حقوق زوجین</span>
+                    <span class="filter-value" data-value="تربیت فرزند">تربیت فرزند</span>
+                </div>
+            </div>
+
+            <div class="filter-by-album">
+                <span class="filter-title">آلبوم ها</span>
+                <span class="filter-svg">
+                    <img src="img/stat_minus_1_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                </span>
+                <div class="filter-dropdown">
+                    <span class="filter-value" data-value="شرحی بر دعای ندبه">شرحی بر دعای ندبه</span>
+                    <span class="filter-value" data-value="شرحی بر دعای مکارم الاخلاق">شرحی بر دعای مکارم الاخلاق</span>
+                    <span class="filter-value" data-value="شرح سوره حجرات">شرح سوره حجرات</span>
+                    <span class="filter-value" data-value="بسوی آخرت">بسوی آخرت</span>
+                    <span class="filter-value" data-value="دهه محرم 1443">دهه محرم 1443</span>
+                    <span class="filter-value" data-value="شرح خطبه متقین نهج البلاغه">شرح خطبه متقین نهج البلاغه</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="line-3">
+            <button class="advanced-search-btn">
+                <span>جستجو</span>
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<div class="webpage-container">
+
+    <nav class="search-bar">
+
+        <div class="logo">
+            <a href="https://www.hodaat.ir/" title="دانلود نرم افزار" target="_blank">
+                <img src="img/logo.png" alt="Logo">
+                <span class="webpage-title">هُدات</span>
+            </a>
+
+        </div>
+
+        <div class="categories">
+
+            <div id="akhlagh" class="category-item">
+                <p class="item-name">موضوعات</p>
+                <p class="item-svg">
+                    <img src="img/keyboard_arrow_down_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                </p>
+                <div class="dropdown-item">
+                    <span class="dropdown-content">اخلاقی</span>
+                    <span class="dropdown-content">اعتقادی</span>
+                    <span class="dropdown-content">حقوق زوجین</span>
+                    <span class="dropdown-content">تربیت فرزند</span>
+                </div>
+
+            </div>
+            <div id="sokhanran" class="category-item">
+                <p class="item-name">سخنرانان</p>
+                <p class="item-svg">
+                    <img src="img/keyboard_arrow_down_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                </p>
+                <div class="dropdown-item">
+                    <span class="dropdown-content">استاد حاج حسن علم الهدی</span>
+                    <span class="dropdown-content">مرحوم استاد فلسفی</span>
+                    <span class="dropdown-content">مرحوم استاد باقر علم الهدی</span>
+                    <span class="dropdown-content">استاد امیر زرین</span>
+                    <span class="dropdown-content">استاد هادی علم الهدی</span>
+                    <span class="dropdown-content">استاد آقاسی زاده</span>
+                    <span class="dropdown-content">مرحوم شیخ احمد کافی</span>
+                    <span class="dropdown-content">استاد بندانی نیشابوری</span>
+                    <span class="dropdown-content">استاد حسن قاسمی</span>
+                </div>
+
+            </div>
+            <div id="albom" class="category-item">
+                <p class="item-name">آلبوم ها</p>
+                <p class="item-svg">
+                    <img src="img/keyboard_arrow_down_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                </p>
+                <div class="dropdown-item">
+                    <span class="dropdown-content">شرحی بر دعای ندبه</span>
+                    <span class="dropdown-content">شرحی بر دعای مکارم الاخلاق</span>
+                    <span class="dropdown-content">شرح سوره حجرات</span>
+                    <span class="dropdown-content">بسوی آخرت</span>
+                    <span class="dropdown-content">دهه محرم 1443</span>
+                    <span class="dropdown-content">شرح خطبه متقین نهج البلاغه</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="special-search">
+            <button class="special-search-btn">
+                <span class="search-svg">
+                    <img src="img/search.svg">
+                </span>
+                <span class="search-title">جستجو</span>
+            </button>
+        </div>
+
+    </nav>
+
+    <section class="body-section">
+
+        <div class="content-container">
+
+            <div class="body-content">
+                <div class="content-title">شرح دعای ندبه (جلسه 12)</div>
+                <div class="content-info">
+
+                    <div class="content-img">
+                        <img src="img/logo.png">
+                    </div>
+
+                    <div class="content-additional-info">
+                        <div class="info-title"  style="font-size: 10px">
+                            <span>
+                                <img src="img/subject_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg">
+                            </span>
+                            <span>موضوع :</span>
+                            <span>کهولت سن و نگرانی ها (2)</span>
+                        </div>
+                        <div class="info-name">
+                            <span>
+                                <img src="img/person_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                            </span>
+                            <span>سخنران : </span>
+                            <span>حاج حامدرضا معاونیان</span>
+                        </div>
+                        <div class="info-date">
+                            <span>
+                                <img src="img/calendar_month_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg">
+                            </span>
+                            <span>جمعه 1403/03/23 (14 ذی الحجه 1434)</span>
+                        </div>
+                        <div class="info-type">
+                            <span>
+                                <img src="img/contact_support_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg">
+                            </span>
+                            <span>نوع فایل : </span>
+                            <span class="file-type">صوتی</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content-visit">
+                    <button>
+                        <span>مشاهده</span>
+                        <span>
+                            <img src="img/download_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                        </span>
+                    </button>
+                </div>
+
+                <div class="content-tags">
+                    <span>#حجاب</span>
+                    <span>#ازدواج</span>
+                    <span>#پوشش</span>
+                    <span>#اخلاقی</span>
+                    <span>#اعتقادی</span>
+                </div>
+            </div>
+
+            <div class="body-content">
+                <div class="content-title">شرح دعای ندبه (جلسه 12)</div>
+                <div class="content-info">
+
+                    <div class="content-img">
+                        <img src="img/logo.png">
+                    </div>
+
+                    <div class="content-additional-info">
+                        <div class="info-title"  style="font-size: 10px">
+                            <span>
+                                <img src="img/subject_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg">
+                            </span>
+                            <span>موضوع :</span>
+                            <span>کهولت سن و نگرانی ها (2)</span>
+                        </div>
+                        <div class="info-name">
+                            <span>
+                                <img src="img/person_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                            </span>
+                            <span>سخنران : </span>
+                            <span>حاج حامدرضا معاونیان</span>
+                        </div>
+                        <div class="info-date">
+                            <span>
+                                <img src="img/calendar_month_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg">
+                            </span>
+                            <span>جمعه 1403/03/23 (14 ذی الحجه 1434)</span>
+                        </div>
+                        <div class="info-type">
+                            <span>
+                                <img src="img/contact_support_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg">
+                            </span>
+                            <span>نوع فایل : </span>
+                            <span class="file-type">صوتی</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content-visit">
+                    <button>
+                        <span>مشاهده</span>
+                        <span>
+                            <img src="img/download_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                        </span>
+                    </button>
+                </div>
+
+                <div class="content-tags">
+                    <span>#حجاب</span>
+                    <span>#ازدواج</span>
+                    <span>#پوشش</span>
+                    <span>#اخلاقی</span>
+                    <span>#اعتقادی</span>
+                </div>
+            </div>
+
+            <div class="body-content">
+                <div class="content-title">شرح دعای ندبه (جلسه 12)</div>
+                <div class="content-info">
+
+                    <div class="content-img">
+                        <img src="img/logo.png">
+                    </div>
+
+                    <div class="content-additional-info">
+                        <div class="info-title"  style="font-size: 10px">
+                            <span>
+                                <img src="img/subject_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg">
+                            </span>
+                            <span>موضوع :</span>
+                            <span>کهولت سن و نگرانی ها (2)</span>
+                        </div>
+                        <div class="info-name">
+                            <span>
+                                <img src="img/person_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                            </span>
+                            <span>سخنران : </span>
+                            <span>حاج حامدرضا معاونیان</span>
+                        </div>
+                        <div class="info-date">
+                            <span>
+                                <img src="img/calendar_month_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg">
+                            </span>
+                            <span>جمعه 1403/03/23 (14 ذی الحجه 1434)</span>
+                        </div>
+                        <div class="info-type">
+                            <span>
+                                <img src="img/contact_support_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg">
+                            </span>
+                            <span>نوع فایل : </span>
+                            <span class="file-type">صوتی</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content-visit">
+                    <button>
+                        <span>مشاهده</span>
+                        <span>
+                            <img src="img/download_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                        </span>
+                    </button>
+                </div>
+
+                <div class="content-tags">
+                    <span>#حجاب</span>
+                    <span>#ازدواج</span>
+                    <span>#پوشش</span>
+                    <span>#اخلاقی</span>
+                    <span>#اعتقادی</span>
+                </div>
+            </div>
+
+            <div class="body-content">
+                <div class="content-title">شرح دعای ندبه (جلسه 12)</div>
+                <div class="content-info">
+
+                    <div class="content-img">
+                        <img src="img/logo.png">
+                    </div>
+
+                    <div class="content-additional-info">
+                        <div class="info-title"  style="font-size: 10px">
+                            <span>
+                                <img src="img/subject_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg">
+                            </span>
+                            <span>موضوع :</span>
+                            <span>کهولت سن و نگرانی ها (2)</span>
+                        </div>
+                        <div class="info-name">
+                            <span>
+                                <img src="img/person_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                            </span>
+                            <span>سخنران : </span>
+                            <span>حاج حامدرضا معاونیان</span>
+                        </div>
+                        <div class="info-date">
+                            <span>
+                                <img src="img/calendar_month_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg">
+                            </span>
+                            <span>جمعه 1403/03/23 (14 ذی الحجه 1434)</span>
+                        </div>
+                        <div class="info-type">
+                            <span>
+                                <img src="img/contact_support_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg">
+                            </span>
+                            <span>نوع فایل : </span>
+                            <span class="file-type">صوتی</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content-visit">
+                    <button>
+                        <span>مشاهده</span>
+                        <span>
+                            <img src="img/download_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                        </span>
+                    </button>
+                </div>
+
+                <div class="content-tags">
+                    <span>#حجاب</span>
+                    <span>#ازدواج</span>
+                    <span>#پوشش</span>
+                    <span>#اخلاقی</span>
+                    <span>#اعتقادی</span>
+                </div>
+            </div>
+
+            <div class="body-content">
+                <div class="content-title">شرح دعای ندبه (جلسه 12)</div>
+                <div class="content-info">
+
+                    <div class="content-img">
+                        <img src="img/logo.png">
+                    </div>
+
+                    <div class="content-additional-info">
+                        <div class="info-title"  style="font-size: 10px">
+                            <span>
+                                <img src="img/subject_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg">
+                            </span>
+                            <span>موضوع :</span>
+                            <span>کهولت سن و نگرانی ها (2)</span>
+                        </div>
+                        <div class="info-name">
+                            <span>
+                                <img src="img/person_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                            </span>
+                            <span>سخنران : </span>
+                            <span>حاج حامدرضا معاونیان</span>
+                        </div>
+                        <div class="info-date">
+                            <span>
+                                <img src="img/calendar_month_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg">
+                            </span>
+                            <span>جمعه 1403/03/23 (14 ذی الحجه 1434)</span>
+                        </div>
+                        <div class="info-type">
+                            <span>
+                                <img src="img/contact_support_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg">
+                            </span>
+                            <span>نوع فایل : </span>
+                            <span class="file-type">صوتی</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content-visit">
+                    <button>
+                        <span>مشاهده</span>
+                        <span>
+                            <img src="img/download_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                        </span>
+                    </button>
+                </div>
+
+                <div class="content-tags">
+                    <span>#حجاب</span>
+                    <span>#ازدواج</span>
+                    <span>#پوشش</span>
+                    <span>#اخلاقی</span>
+                    <span>#اعتقادی</span>
+                </div>
+            </div>
+
+            <div class="body-content">
+                <div class="content-title">شرح دعای ندبه (جلسه 12)</div>
+                <div class="content-info">
+
+                    <div class="content-img">
+                        <img src="img/logo.png">
+                    </div>
+
+                    <div class="content-additional-info">
+                        <div class="info-title"  style="font-size: 10px">
+                            <span>
+                                <img src="img/subject_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg">
+                            </span>
+                            <span>موضوع :</span>
+                            <span>کهولت سن و نگرانی ها (2)</span>
+                        </div>
+                        <div class="info-name">
+                            <span>
+                                <img src="img/person_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                            </span>
+                            <span>سخنران : </span>
+                            <span>حاج حامدرضا معاونیان</span>
+                        </div>
+                        <div class="info-date">
+                            <span>
+                                <img src="img/calendar_month_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg">
+                            </span>
+                            <span>جمعه 1403/03/23 (14 ذی الحجه 1434)</span>
+                        </div>
+                        <div class="info-type">
+                            <span>
+                                <img src="img/contact_support_24dp_FFFFFF_FILL0_wght300_GRAD0_opsz24.svg">
+                            </span>
+                            <span>نوع فایل : </span>
+                            <span class="file-type">صوتی</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content-visit">
+                    <button>
+                        <span>مشاهده</span>
+                        <span>
+                            <img src="img/download_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg">
+                        </span>
+                    </button>
+                </div>
+
+                <div class="content-tags">
+                    <span>#حجاب</span>
+                    <span>#ازدواج</span>
+                    <span>#پوشش</span>
+                    <span>#اخلاقی</span>
+                    <span>#اعتقادی</span>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+</div>
+
+
+</body>
